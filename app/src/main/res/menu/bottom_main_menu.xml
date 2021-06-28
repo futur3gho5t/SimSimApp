@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="withText"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/subscribeFragment"
+        android:icon="@drawable/ic_bell"
+        app:showAsAction="withText"
+        android:title="Subscribe" />
+
+    <item
+        android:id="@+id/lolka"
+        android:title=""
+        app:showAsAction=""/>
+
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/ic_history"
+        app:showAsAction="withText"
+        android:title="History" />
+
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="withText"
+        android:title="Settings" />
+
+</menu>

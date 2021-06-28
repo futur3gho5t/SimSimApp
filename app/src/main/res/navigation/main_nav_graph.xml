@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="az.azreco.simsimapp.ui.fragments.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="az.azreco.simsimapp.ui.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/subscribeFragment"
+        android:name="az.azreco.simsimapp.ui.fragments.SubscribeFragment"
+        android:label="SubscribeFragment" >
+        <action
+            android:id="@+id/action_subscribeFragment_to_subscribeDetailFragment"
+            app:destination="@id/subscribeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="az.azreco.simsimapp.ui.fragments.HistoryFragment"
+        android:label="HistoryFragment" />
+    <fragment
+        android:id="@+id/subscribeDetailFragment"
+        android:name="az.azreco.simsimapp.ui.fragments.SubscribeDetailFragment"
+        android:label="SubscribeDetailFragment" >
+        <action
+            android:id="@+id/action_subscribeDetailFragment_to_subscribeFragment2"
+            app:destination="@id/subscribeFragment" />
+        <argument
+            android:name="subscribe_app"
+            app:argType="string" />
+    </fragment>
+</navigation>
